@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.logInText{
+    text-align: center;
+    color:#48875D;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.dashBoardText{
+text-align: center;
+color: #48875D;
+font-weight: 400;
+}
+
+.container{
+display: flex;
+height: 100vh;
+align-items: center;
+justify-content: center;
+}
+
+.input-one{
+ 
+    font-family: 'Poppins', sans-serif !important;
+background-color: #48875D !important;
+
+}
+.input-two{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.input-one::placeholder{
+ 
+    color:white !important
+}
+.input-two::placeholder{
+    color:#48875D !important
+}
+
+.Button{
+    color: black !important;
+    border: 2px solid gray !important;
+    background-color: gray !important;
+}
