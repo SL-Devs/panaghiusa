@@ -106,7 +106,7 @@ body {
   z-index: -1;
 }
 
-.download-image .app-img {
+.download-image .app-image {
   position: relative;
   max-width: 350px;
   padding: 65px 0 60px 60px;
@@ -237,6 +237,40 @@ footer .footer-links {
 
 
 @media (max-width: 575.98px) {
+
+  /* Home img */
+  
+  #home-section figure img {
+    max-width: 12.5rem;
+  }
+
+  /* About img */
+  
+  .about-img .about-shape {
+    width: 18.375rem;
+    border-radius: 50%;
+  }
+
+  .about-img .app {
+    max-width: 10.375rem;
+  }
+
+  .about-img .about-shape {
+    width: 17.5rem;
+    height: 17.5rem;
+  }
+   
+  /* Download img */
+
+  .download-image .download-shape-1 {
+    height: 14.375rem;
+    width: 14.375rem;
+  }
+  
+  .download-image .app-image {
+    max-width: 15.625rem;
+    padding: 1.875rem 0 3.75rem 3.75rem;
+  }
 
   #home-section h1,
   #about-us h1,
