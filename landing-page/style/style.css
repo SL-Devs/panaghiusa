@@ -1,0 +1,214 @@
+:root {
+  --bd-light-green: #b7e4c7;
+  --color-green: #4C9865;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body::before {
+  display: block;
+  content: "";
+  height: 90px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar li a:hover {
+  color: var(--color-green) !important;
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 300px;
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+/* Increase padding top & bottom */
+#features, 
+#about-us, 
+#meet-the-team,
+#download,
+#contact {
+  padding: 6.25rem 0 !important;
+}
+
+/* About section */
+
+.about-img {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin-left: 50px;
+  padding: 100px 0 100px 0; 
+}
+
+
+.about-img .about-shape {
+  position: relative;
+  width: 394px;
+  height: 394px;
+  background-color: var(--bd-light-green); 
+  border-radius: 50%;
+}
+
+.about-img .about-shape::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid var(--bd-light-green);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: scale(1.1) rotate(25deg);
+}
+
+
+.about-img .app {
+  max-width: 250px;
+  position: absolute;
+  top: 100px;
+  left: 95px;
+  transform: rotate(-25deg) translateY(-15%);
+}
+
+/* The team */
+
+.team-img img{
+  width: 150px;
+}
+
+/* Download */
+
+.download-image .download-shape-1{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-color: var(--bd-light-green);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.download-image .app-img {
+  position: relative;
+  max-width: 350px;
+  padding: 65px 0 60px 60px;
+}
+
+
+/* Icons style */
+
+.btn-group a {
+  font-size: 1.5rem;
+}
+
+.fa-facebook {
+	color: #3b5998;
+}
+
+.fa-twitter {
+	color: #1da1f2;
+}
+
+.fa-instagram {
+	color: #c32aa3;
+}
+
+.fa-Linkedin {
+	color: #0a66c2;
+}
+
+.fa-github {
+	color: #333;
+}
+
+.fa-youtube {
+	color: #bb0000;
+}
+
+/* Footer */
+
+footer .footer-links {
+  text-decoration: none;
+}
+
+
+/* Material icons styling */
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* Media queries */
+
+@media only screen and (max-width: 976px) {
+  .about-image .app{
+      max-width: 150px;
+  }
+
+  .about-img .about-shape{
+    width: 380px;
+    height: 380px;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  #home-section h1, #about-us h1, #feature h1, #download h1 {
+    font-size: 1.8rem;
+  }
+
+  #home-section p, #about-us p, #meet-the-team p, #download p {
+    font-size: 1.2rem;
+  }
+
+  #meet-the-team p.card-text {
+      font-size: 1rem;
+  }
+
+  #download .btn-group a i{
+    font-size: 1.2rem;
+  }
+
+  #download .btn-group a {
+    font-size: 1.2rem;
+  }
+
+	.btn-group a {
+		font-size: 1.8rem;
+	}
+}
+
+
+@media (max-width: 575.98px) {
+	.btn-group a {
+		font-size: 1.5rem;
+	}
+}
