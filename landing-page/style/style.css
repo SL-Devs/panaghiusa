@@ -190,8 +190,9 @@ footer .footer-links {
 /* Media queries */
 
 @media only screen and (max-width: 976px) {
-  .about-imge .app {
-    max-width: 150px;
+
+  .about-img .app {
+    max-width: 250px;
   }
 
   .about-img .about-shape {
@@ -225,11 +226,7 @@ footer .footer-links {
     font-size: 1rem;
   }
 
-  #download .btn-group a i {
-    font-size: 1.2rem;
-  }
-
-  #download .btn-group a {
+  #download button {
     font-size: 1.2rem;
   }
 
@@ -240,6 +237,7 @@ footer .footer-links {
 
 
 @media (max-width: 575.98px) {
+
   #home-section h1,
   #about-us h1,
   #feature h1,
@@ -266,11 +264,12 @@ footer .footer-links {
     width: 320px;
   }
 
-  #download .btn-group a i {
+  #about-us button {
     font-size: 1rem;
   }
 
-  #download .btn-group a {
+  #download button {
     font-size: 1rem;
   }
+
 }
