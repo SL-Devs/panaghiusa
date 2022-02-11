@@ -39,8 +39,8 @@ body {
 }
 
 /* Increase padding top & bottom */
-#features, 
-#about-us, 
+#features,
+#about-us,
 #meet-the-team,
 #download,
 #contact {
@@ -54,7 +54,7 @@ body {
   position: relative;
   text-align: center;
   margin-left: 50px;
-  padding: 100px 0 100px 0; 
+  padding: 100px 0 100px 0;
 }
 
 
@@ -62,11 +62,11 @@ body {
   position: relative;
   width: 394px;
   height: 394px;
-  background-color: var(--bd-light-green); 
+  background-color: var(--bd-light-green);
   border-radius: 50%;
 }
 
-.about-img .about-shape::before{
+.about-img .about-shape::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -91,13 +91,13 @@ body {
 
 /* The team */
 
-.team-img img{
+.team-img img {
   width: 150px;
 }
 
 /* Download */
 
-.download-image .download-shape-1{
+.download-image .download-shape-1 {
   position: absolute;
   height: 300px;
   width: 300px;
@@ -120,27 +120,27 @@ body {
 }
 
 .fa-facebook {
-	color: #3b5998;
+  color: #3b5998;
 }
 
 .fa-twitter {
-	color: #1da1f2;
+  color: #1da1f2;
 }
 
 .fa-instagram {
-	color: #c32aa3;
+  color: #c32aa3;
 }
 
 .fa-Linkedin {
-	color: #0a66c2;
+  color: #0a66c2;
 }
 
 .fa-github {
-	color: #333;
+  color: #333;
 }
 
 .fa-youtube {
-	color: #bb0000;
+  color: #bb0000;
 }
 
 /* Footer */
@@ -153,27 +153,48 @@ footer .footer-links {
 /* Material icons styling */
 
 /* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
 
 /* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
 
 /* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /* Media queries */
 
 @media only screen and (max-width: 976px) {
-  .about-image .app{
-      max-width: 150px;
+  .about-imge .app {
+    max-width: 150px;
   }
 
-  .about-img .about-shape{
+  .about-img .about-shape {
     width: 380px;
     height: 380px;
   }
@@ -181,19 +202,30 @@ footer .footer-links {
 
 
 @media (max-width: 767.98px) {
-  #home-section h1, #about-us h1, #feature h1, #download h1 {
+
+  #home-section h1,
+  #about-us h1,
+  #feature h1,
+  #download h1 {
     font-size: 1.8rem;
   }
 
-  #home-section p, #about-us p, #meet-the-team p, #download p {
+  #home-section p,
+  #about-us p,
+  #meet-the-team p,
+  #download p {
     font-size: 1.2rem;
   }
 
   #meet-the-team p.card-text {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
-  #download .btn-group a i{
+  #about-us button {
+    font-size: 1rem;
+  }
+
+  #download .btn-group a i {
     font-size: 1.2rem;
   }
 
@@ -201,14 +233,44 @@ footer .footer-links {
     font-size: 1.2rem;
   }
 
-	.btn-group a {
-		font-size: 1.8rem;
-	}
+  .btn-group a {
+    font-size: 1.8rem;
+  }
 }
 
 
 @media (max-width: 575.98px) {
-	.btn-group a {
-		font-size: 1.5rem;
-	}
+  #home-section h1,
+  #about-us h1,
+  #feature h1,
+  #download h1 {
+    font-size: 1.5rem;
+  }
+
+  #home-section p,
+  #about-us p,
+  #meet-the-team p,
+  #download p {
+    font-size: 1rem;
+  }
+
+  .btn-group a {
+    font-size: 1.5rem;
+  }
+
+  #home-section button {
+    font-size: 1rem;
+  }
+
+  #home-section figure img {
+    width: 320px;
+  }
+
+  #download .btn-group a i {
+    font-size: 1rem;
+  }
+
+  #download .btn-group a {
+    font-size: 1rem;
+  }
 }
