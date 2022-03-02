@@ -1,0 +1,48 @@
+.realtime{
+    flex: 4;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+}
+
+.reportTitle{
+    font-weight: 700;
+    text-align: center;
+ 
+    font-size: 32px;
+    color: #4C9865;;
+   
+    text-transform: uppercase;
+   
+}
+.buttonChanges{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.buttonNext{
+    border: none;
+    font-weight: 600;
+    color: white;
+    background: #3bb077 ;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px;
+    width: 100px;
+}
+
+.buttonNext:hover{
+    color: black;
+    background: #e9e9e9 ;
+}
+.buttonDelete{
+    width: 100px;
+    color: black;
+    background: #e9e9e9;
+    
+}
