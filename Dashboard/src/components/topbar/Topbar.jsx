@@ -1,15 +1,13 @@
 import React from "react";
 import "./topbar.css";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import { useUserAuth } from "../../UserAuthContext";
 import { Link, useNavigate } from "react-router-dom";
 
-export default function Topbar() {
+export default function Topbar({ setDisplay }) {
   const Navigate = useNavigate();
-  const { logout, setLogout } = useUserAuth();
 
   const handleLogout = () => {
-    setLogout(false);
+    setDisplay(false);
     Navigate("/");
   };
   return (
