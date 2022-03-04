@@ -14,7 +14,6 @@ import { set, ref, onValue, remove, update } from "firebase/database";
 
 const userAuthContext = createContext();
 export function UserAuthContextProvider({ children }) {
-  const [logout, setLogout] = useState(false);
   const [user, setUser] = useState({});
   const [data, setData] = useState([]);
   const [RealtimeData, setRealtimeData] = useState([]);
@@ -56,8 +55,6 @@ export function UserAuthContextProvider({ children }) {
       }
     });
   }, []);
-
-  console.log(OrganicContribution);
 
   const options = {
     labels: {
@@ -119,8 +116,6 @@ export function UserAuthContextProvider({ children }) {
         setRealtimeData,
         OrganicContribution,
         setOrganicContribution,
-        logout,
-        setLogout,
       }}
     >
       {children}

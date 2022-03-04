@@ -2,7 +2,7 @@ import "./app.css";
 import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import Home from "./Pages/Home/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import UserList from "./Pages/UserList/UserList";
 import User from "./Pages/User/User";
 import Realtime from "./Pages/Plastic/Plastic";
@@ -12,22 +12,14 @@ import Waste from "./Pages/Waste/Waste";
 import WasteManagement from "./Pages/WasteManagement/WasteManagement";
 import { useState } from "react";
 import Login from "./Pages/Login/Login";
-import { useUserAuth } from "./UserAuthContext";
 
 function App() {
-  const { logout, setLogout } = useUserAuth();
+  const [display, setDisplay] = useState(false);
   return (
-    <Router>
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={<Login logout={logout} setLogout={setLogout} />}
-        />
-      </Routes>
-      {logout && (
+    <>
+      {display ? (
         <>
-          <Topbar />
+          <Topbar setDisplay={setDisplay} />
           <div className="container">
             <Sidebar />
             <Routes>
@@ -39,11 +31,18 @@ function App() {
               <Route path="/wastemanagement" element={<WasteManagement />} />
               <Route path="/organicwaste/:organicwasteId" element={<Waste />} />
               <Route path="/upload" element={<ImageUpload />} />
+              <Route
+                exact
+                path="/"
+                element={<Login display={display} setDisplay={setDisplay} />}
+              />
             </Routes>
           </div>
         </>
+      ) : (
+        <Login display={display} setDisplay={setDisplay} />
       )}
-    </Router>
+    </>
   );
 }
 

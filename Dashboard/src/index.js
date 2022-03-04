@@ -1,18 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { UserAuthContextProvider } from './UserAuthContext'
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { UserAuthContextProvider } from "./UserAuthContext";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-  <UserAuthContextProvider>
-    
-    <App />
-
+    <UserAuthContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </UserAuthContextProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
