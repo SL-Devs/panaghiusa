@@ -1,13 +1,12 @@
 :root {
   --bd-light-green: #b7e4c7;
-  --color-green: #4C9865;
+  --color-green: #4c9865;
 }
 
 * {
   margin: 0;
   padding: 0;
 }
-
 
 body::before {
   display: block;
@@ -16,7 +15,7 @@ body::before {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* navbar */
@@ -32,10 +31,11 @@ body {
 
 .b-example-divider {
   height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
   border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
 /* Increase padding top & bottom */
@@ -56,7 +56,6 @@ body {
   margin-left: 50px;
   padding: 100px 0 100px 0;
 }
-
 
 .about-img .about-shape {
   position: relative;
@@ -79,7 +78,6 @@ body {
   border-right-color: transparent;
   transform: scale(1.1) rotate(25deg);
 }
-
 
 .about-img .app {
   max-width: 250px;
@@ -111,7 +109,6 @@ body {
   max-width: 350px;
   padding: 65px 0 60px 60px;
 }
-
 
 /* Icons style */
 
@@ -148,7 +145,6 @@ body {
 footer .footer-links {
   text-decoration: none;
 }
-
 
 /* Material icons styling */
 
@@ -190,7 +186,6 @@ footer .footer-links {
 /* Media queries */
 
 @media only screen and (max-width: 976px) {
-
   .about-img .app {
     max-width: 250px;
   }
@@ -201,9 +196,7 @@ footer .footer-links {
   }
 }
 
-
 @media (max-width: 767.98px) {
-
   #home-section h1,
   #about-us h1,
   #feature h1,
@@ -235,9 +228,7 @@ footer .footer-links {
   }
 }
 
-
 @media (max-width: 575.98px) {
-
   /* Home img */
 
   #home-section figure img {
@@ -245,13 +236,14 @@ footer .footer-links {
   }
 
   /* About img */
-  
+
   .about-img .about-shape {
     width: 18.375rem;
     border-radius: 50%;
   }
 
   .about-img .app {
+    left: 5rem;
     max-width: 10.375rem;
   }
 
@@ -259,14 +251,14 @@ footer .footer-links {
     width: 17.5rem;
     height: 17.5rem;
   }
-   
+
   /* Download img */
 
   .download-image .download-shape-1 {
     height: 14.375rem;
     width: 14.375rem;
   }
-  
+
   .download-image .app-image {
     max-width: 15.625rem;
     padding: 1.875rem 0 3.75rem 3.75rem;
@@ -305,5 +297,4 @@ footer .footer-links {
   #download button {
     font-size: 1rem;
   }
-
 }
