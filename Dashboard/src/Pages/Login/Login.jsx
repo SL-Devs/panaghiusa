@@ -14,7 +14,13 @@ import { useUserAuth } from "../../UserAuthContext";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#b7e4c7",
+    },
+  },
+});
 
 export default function Login({ authenticate }) {
   const Navigate = useNavigate();
@@ -90,11 +96,11 @@ export default function Login({ authenticate }) {
             <Alert severity="error">{error}</Alert>
           ) : null}
 
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+          <Avatar id="admin-lock-icon" sx={{ m: 1, bgcolor: "primary.main" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Login
+            Admin Login
           </Typography>
           <Box
             component="form"
