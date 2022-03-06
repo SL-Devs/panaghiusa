@@ -45,7 +45,7 @@ export function UserAuthContextProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    onValue(ref(db, "PlasticContribution/"), (snapshot) => {
+    onValue(ref(db, "OrganicContribution/"), (snapshot) => {
       setOrganicContribution([]);
       const data = snapshot.val();
       if (data !== null) {
@@ -61,19 +61,6 @@ export function UserAuthContextProvider({ children }) {
       confirmable: "Confirm",
       cancellable: "Cancel",
     },
-  };
-  //Delete Data
-  const handleDelete = async (id) => {
-    const result = await confirm(
-      "Are you sure you want to upload this file ?",
-      options
-    );
-    if (result) {
-      setData(data.filter((item) => item.id !== id));
-      remove(ref(db, `Users/${id}`));
-
-      return;
-    }
   };
 
   function logIn(email, password) {
@@ -110,7 +97,7 @@ export function UserAuthContextProvider({ children }) {
         logOut,
         googleSignIn,
         data,
-        handleDelete,
+
         setData,
         RealtimeData,
         setRealtimeData,

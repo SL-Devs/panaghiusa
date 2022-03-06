@@ -16,7 +16,7 @@ import { useState, useEffect } from "react";
 
 const theme = createTheme();
 
-export default function Login({ setDisplay }) {
+export default function Login({ authenticate }) {
   const Navigate = useNavigate();
   const { logIn } = useUserAuth();
   const initialValues = { email: "", password: "" };
@@ -35,9 +35,10 @@ export default function Login({ setDisplay }) {
     setFormErrors(validate(formValues));
     setIsSubmit(true);
     logIn(formValues.email, formValues.password)
-      .then(() => {
+      .then((userCredential) => {
         Navigate("/home");
-        setDisplay(true);
+        authenticate();
+        console.log(userCredential.user);
       })
       .catch((error) => {
         setError(error.message);

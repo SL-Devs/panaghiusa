@@ -7,7 +7,14 @@ import { DataGrid } from "@mui/x-data-grid";
 import { useNavigate } from "react-router-dom";
 import { db } from "../../Firebase";
 import { confirm } from "react-confirm-box";
+import { CsvBuilder } from "filefy";
+
 import DeleteIcon from "@mui/icons-material/Delete";
+import PrintIcon from "@mui/icons-material/Print";
+
+import jsPDF from "jspdf";
+import "jspdf-autotable";
+import { Grid4x4 } from "@mui/icons-material";
 
 export default function RealtimeReports() {
   const navigate = useNavigate();
@@ -51,30 +58,36 @@ export default function RealtimeReports() {
   const nextPage = () => {
     navigate("/wastemanagement");
   };
+
   const columns = [
-    { field: `contributionID`, headerName: "Contribution ID", width: 200 },
     {
-      field: "value",
-      headerName: "Profile ",
-      width: 100,
-      renderCell: (params) => {
-        return (
-          <>
-            <img src={params.row.value} alt="" width="30px" height="30px" />
-          </>
-        );
-      },
+      field: `contributionID`,
+      title: "contributionID",
+      headerName: "Contribution ID",
+      width: 200,
     },
-    { field: "fullname", headerName: "Fullname", width: 200 },
-    { field: "address", headerName: "Address", width: 200 },
-    { field: "longandlat", headerName: "Longitude and Latitude", width: 300 },
-    { field: "number", headerName: "Number", width: 200 },
-    { field: "time", headerName: "Time", width: 100 },
+
+    {
+      field: "fullname",
+      title: "Fullname",
+      headerName: "Fullname",
+      width: 200,
+    },
+    { field: "address", title: "Address", headerName: "Address", width: 200 },
+    {
+      field: "longandlat",
+      title: "Longitude and Lat",
+      headerName: "Longitude and Latitude",
+      width: 300,
+    },
+    { field: "number", title: "Number", headerName: "Number", width: 200 },
+    { field: "time", title: "Time", headerName: "Time", width: 100 },
 
     {
       field: "action",
       headerName: "Action",
       width: 100,
+
       renderCell: (params) => {
         return (
           <>
@@ -92,11 +105,44 @@ export default function RealtimeReports() {
       },
     },
   ];
+
+  const downloadPdf = () => {
+    const doc = new jsPDF();
+    doc.text("Plastic Reports", 20, 10);
+    doc.autoTable({
+      theme: "grid",
+      columns: columns.map((col) => ({ ...col, dataKey: col.field })),
+      body: RealtimeData,
+    });
+    doc.save("table.pdf");
+  };
+
+  const downLoadExcel = () => {
+    new CsvBuilder("tableData.csv")
+      .setColumns(columns.map((col) => col.title))
+      .addRow(["Eve", "Holt"])
+      .addRows([
+        ["Charles", "Morris"],
+        ["Tracey", "Ramos"],
+      ])
+      .exportFile();
+  };
+
   return (
     <div className="userList">
       <div className="reportTitle">Plastic Contribution Reports</div>
 
+      <button onClick={downloadPdf} className="btnPrint">
+        <PrintIcon />
+        PDF
+      </button>
+      <button onClick={downLoadExcel} className="btnPrint">
+        <Grid4x4 />
+        Exce
+      </button>
+
       <DataGrid
+        title="Employee Data"
         className="dataGrid"
         getRowId={(row) => row.contributionID}
         style={{ height: "60%", width: "100%" }}
