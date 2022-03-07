@@ -10,6 +10,7 @@ import {
 } from "firebase/auth";
 import { db, auth } from "./Firebase";
 import { confirm } from "react-confirm-box";
+
 import { set, ref, onValue, remove, update } from "firebase/database";
 
 const userAuthContext = createContext();
@@ -33,7 +34,7 @@ export function UserAuthContextProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    onValue(ref(db, "PlasticContribution/"), (snapshot) => {
+    onValue(ref(db, `PlasticContribution/`), (snapshot) => {
       setRealtimeData([]);
       const data = snapshot.val();
       if (data !== null) {
@@ -43,6 +44,8 @@ export function UserAuthContextProvider({ children }) {
       }
     });
   }, []);
+
+  console.log(RealtimeData);
 
   useEffect(() => {
     onValue(ref(db, "OrganicContribution/"), (snapshot) => {

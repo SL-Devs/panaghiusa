@@ -27,11 +27,6 @@
   cursor: pointer;
 }
 
-.logo:hover {
-  text-decoration: underline;
-  text-decoration-color: #4c9865;
-}
-
 .topbarIconContainer {
   position: relative;
   cursor: pointer;
