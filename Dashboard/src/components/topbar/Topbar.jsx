@@ -16,7 +16,7 @@ export default function Topbar({ setAuth }) {
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <Link to="/home">
+          <a href="https://panaghiusa.netlify.app" alt="#" target="_blank">
             <span className="logo">
               <img
                 src="https://panaghiusa.netlify.app/img/panaghiusa.png"
@@ -26,7 +26,7 @@ export default function Topbar({ setAuth }) {
               />
               Panaghiusa
             </span>
-          </Link>
+          </a>
         </div>
         <button onClick={handleLogout} className="button-logout">
           Log out <ExitToAppIcon className="iconExit" />{" "}

@@ -36,7 +36,6 @@ function App() {
               <Login authenticate={() => setAuth(true)} setAuth={setAuth} />
             }
           />
-          <Route path="*" element={<Login />} />
         </Routes>
       )}
 
@@ -55,6 +54,10 @@ function App() {
               <Route path="/wastemanagement" element={<WasteManagement />} />
               <Route path="/organicwaste/:organicwasteId" element={<Waste />} />
               <Route path="/upload" element={<ImageUpload />} />
+              <Route
+                path="*"
+                element={<Navigate to={auth ? "/home" : "/"} />}
+              />
             </Routes>
           </div>
         </>

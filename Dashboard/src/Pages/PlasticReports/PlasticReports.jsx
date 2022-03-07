@@ -3,18 +3,26 @@ import "./PlasticReports.css";
 import { useUserAuth } from "../../UserAuthContext";
 import { Link } from "react-router-dom";
 import { ref, remove } from "firebase/database";
-import { DataGrid } from "@mui/x-data-grid";
+import {
+  DataGrid,
+  GridToolbarContainer,
+  GridToolbarExport,
+  GridToolbarDensitySelector,
+} from "@mui/x-data-grid";
 import { useNavigate } from "react-router-dom";
 import { db } from "../../Firebase";
 import { confirm } from "react-confirm-box";
-import { CsvBuilder } from "filefy";
 
 import DeleteIcon from "@mui/icons-material/Delete";
-import PrintIcon from "@mui/icons-material/Print";
 
-import jsPDF from "jspdf";
-import "jspdf-autotable";
-import { Grid4x4 } from "@mui/icons-material";
+function CustomToolbar() {
+  return (
+    <GridToolbarContainer>
+      <GridToolbarDensitySelector />
+      <GridToolbarExport />
+    </GridToolbarContainer>
+  );
+}
 
 export default function RealtimeReports() {
   const navigate = useNavigate();
@@ -86,6 +94,8 @@ export default function RealtimeReports() {
     {
       field: "action",
       headerName: "Action",
+      title: null,
+      title: "action ",
       width: 100,
 
       renderCell: (params) => {
@@ -106,40 +116,9 @@ export default function RealtimeReports() {
     },
   ];
 
-  const downloadPdf = () => {
-    const doc = new jsPDF();
-    doc.text("Plastic Reports", 20, 10);
-    doc.autoTable({
-      theme: "grid",
-      columns: columns.map((col) => ({ ...col, dataKey: col.field })),
-      body: RealtimeData,
-    });
-    doc.save("table.pdf");
-  };
-
-  const downLoadExcel = () => {
-    new CsvBuilder("tableData.csv")
-      .setColumns(columns.map((col) => col.title))
-      .addRow(["Eve", "Holt"])
-      .addRows([
-        ["Charles", "Morris"],
-        ["Tracey", "Ramos"],
-      ])
-      .exportFile();
-  };
-
   return (
     <div className="userList">
       <div className="reportTitle">Plastic Contribution Reports</div>
-
-      <button onClick={downloadPdf} className="btnPrint">
-        <PrintIcon />
-        PDF
-      </button>
-      <button onClick={downLoadExcel} className="btnPrint">
-        <Grid4x4 />
-        Exce
-      </button>
 
       <DataGrid
         title="Employee Data"
@@ -152,6 +131,7 @@ export default function RealtimeReports() {
         pageSize={10}
         onSelectionModelChange={(rows) => setSelectedRows(rows)}
         rowsPerPageOptions={[10]}
+        components={{ Toolbar: CustomToolbar }}
         checkboxSelection
       />
       <div className="buttonChanges">

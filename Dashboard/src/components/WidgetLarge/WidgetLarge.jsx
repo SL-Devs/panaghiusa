@@ -11,10 +11,12 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField";
 import SearchIcon from "@mui/icons-material/Search";
+import { GridToolbar } from "@mui/x-data-grid";
 export default function WidgetLarge() {
   const { data } = useUserAuth();
   console.table(data);
   const [searchTerm, setSearchTerm] = useState(" ");
+
   return (
     <div className="widgetLg">
       <Box
@@ -28,7 +30,11 @@ export default function WidgetLarge() {
           variant="standard"
         />
       </Box>
-      <TableContainer component={Paper} variant="outlined">
+      <TableContainer
+        component={Paper}
+        variant="outlined"
+        sx={{ overflowX: "auto" }}
+      >
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>

@@ -59,3 +59,24 @@
 .btnPrint:hover {
   color: black;
 }
+
+.MuiDataGrid-toolbarContainer.css-ypofq1-MuiDataGrid-toolbarContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiButton-textSizeSmall.MuiButtonBase-root.css-1knaqv7-MuiButtonBase-root-MuiButton-root {
+  color: #4c9865;
+  font-size: 10px;
+}
+button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeSmall.MuiButton-textSizeSmall.MuiButtonBase-root.css-1knaqv7-MuiButtonBase-root-MuiButton-root:hover {
+  color: black;
+}
+
+li.MuiMenuItem-root.MuiMenuItem-gutters.MuiButtonBase-root.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  font-size: 12px;
+  padding: 5px;
+  color: black;
+  font-weight: 400;
+}
