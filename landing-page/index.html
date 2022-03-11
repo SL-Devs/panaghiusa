@@ -47,6 +47,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="style/style.css">
 
+  <!-- Venobox -->
+  <link rel="stylesheet" href="venobox/dist/venobox.min.css" type="text/css" media="screen" />
+
   <!-- Script -->
   <script src="js/script.js"></script>
 
@@ -73,6 +76,7 @@
 
 <body id="home">
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
     <div class="container p-3">
       <a href="#" class="navbar-brand">
@@ -107,6 +111,7 @@
     </div>
   </nav>
 
+  <!-- Intro -->
   <section class="py-5 border-bottom border-light border-3 shadow-lg" id="home-section">
     <div class="container overflow-hidden">
       <div class="row align-items-center justify-content-center justify-content-lg-between">
@@ -118,8 +123,8 @@
             <a href="#" target="_blank"><button type="button"
                 class="btn btn-success btn-lg px-4 me-md-2 fw-bold">Download for
                 Android</button></a>
-            <a href="https://www.youtube.com/watch?v=G_qer5JQVSE&ab_channel=SLDevs" class="mt-2" target="_blank"><i
-                class="fa-brands fa-youtube fa-2xl"></i></a>
+            <a href="https://www.youtube.com/watch?v=G_qer5JQVSE&ab_channel=SLDevs" class="mt-2 venobox"
+              data-autoplay="true" data-vbtype="video"><i class="fa-brands fa-youtube fa-2xl"></i></a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
@@ -193,20 +198,61 @@
             <h3>How to recycle plastics</h3>
             <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, provident!
             </p>
-            <button class="btn btn-outline-primary" type="button">Watch now</button>
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+              data-bs-target="#guidesRecycleModal">Watch now</button>
           </div>
         </div>
         <div class="col-md-6">
           <div class="h-100 p-5 bg-light border rounded-3">
-            <h3>How to compose your waste</h3>
+            <h3>How to compose your food waste</h3>
             <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, provident!
             </p>
-            <button class="btn btn-outline-primary" type="button">Watch now</button>
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+              data-bs-target="#guideWasteModal">Watch now</button>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Modals -->
+  <div class="modal fade" id="guidesRecycleModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">How to Recycle Plastics</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="guideWasteModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">How to Compose Food Waste</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Waste Modal
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- About us -->
   <section id="about-us" class="py-5 overflow-hidden">
@@ -462,19 +508,30 @@
     </div>
   </footer>
 
+  <!-- Venobox js -->
+  <script type="text/javascript" src="venobox/dist/venobox.min.js"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+    // Venobox
+    new VenoBox({
+      spinner: "flow",
+      spinColor: "#4c9865",
+    });
+
     AOS.init({
-      disable: true,
+      // disable: true,
       duration: 1000,
       mirror: false,
     });
   </script>
 
-  <!-- Bootstrap JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
 
 </body>
 
