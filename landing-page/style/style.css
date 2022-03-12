@@ -1,6 +1,8 @@
 :root {
   --bd-light-green: #b7e4c7;
   --color-green: #4c9865;
+  --ease: all 0.3s ease 0s;
+  --overlay: rgba(23, 25, 29, 0.8);
 }
 
 * {
@@ -45,11 +47,48 @@ body {
 
 /* Increase padding top & bottom */
 #features,
+#guides,
 #about-us,
 #meet-the-team,
 #download,
 #contact {
   padding: 6.25rem 0 !important;
+}
+
+/* Guides */
+.top-header {
+  min-height: 370px;
+  background: linear-gradient(var(--overlay), var(--overlay)),
+    url(../img/bd-guides/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video {
+  height: 180px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.video i:hover {
+  opacity: 1;
+  background-color: #4c9865;
 }
 
 /* About section */
