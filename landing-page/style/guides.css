@@ -1,0 +1,122 @@
+:root {
+  --bd-light-green: #b7e4c7;
+  --color-green: #4c9865;
+  --ease: all 0.3s ease 0s;
+  --overlay: rgba(23, 25, 29, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Carousel */
+/* .carousel-item .carousel-caption {
+  color: white !important;
+  background-color: var(--color-green);
+  padding: 0.5rem;
+  border-radius: 10px;
+} */
+
+.carousel {
+  margin-bottom: 4rem; 
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 40rem;
+  background-color: black;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  /* height: 40rem; */
+  object-fit: cover;
+  /* opacity: 0.4; */
+  filter: opacity(0.5);
+  -webkit-filter: opacity(0.5);
+  -moz-filter: opacity(0.5);
+}
+
+/* Guides */
+.top-header-plastics {
+  min-height: 370px;
+  background: linear-gradient(var(--overlay), var(--overlay)),
+    url(../img/bd-guides/plastics/p1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-header-composing {
+  min-height: 370px;
+  background: linear-gradient(var(--overlay), var(--overlay)),
+    url(../img/bd-guides/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video {
+  height: 180px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.video i:hover {
+  opacity: 1;
+  background-color: #4c9865;
+}
+
+
+/* Media queries */
+@media (max-width: 976px) {
+  .carousel-item {
+    height: 30rem;
+  }
+  
+}
+
+@media (max-width: 767.98px) {
+  .carousel-item {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Home img */
+  .carousel-item {
+    height: 20rem;
+  }
+}

@@ -56,7 +56,16 @@ body {
 }
 
 /* Guides */
-.top-header {
+.top-header-plastics {
+  min-height: 370px;
+  background: linear-gradient(var(--overlay), var(--overlay)),
+    url(../img/bd-guides/plastics/p1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-header-composing {
   min-height: 370px;
   background: linear-gradient(var(--overlay), var(--overlay)),
     url(../img/bd-guides/1.jpg);
@@ -229,7 +238,7 @@ footer .footer-links {
 
 /* Media queries */
 
-@media only screen and (max-width: 976px) {
+@media (max-width: 976px) {
   .about-img .app {
     max-width: 250px;
   }
