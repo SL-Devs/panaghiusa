@@ -238,7 +238,7 @@ footer .footer-links {
 
 /* Media queries */
 
-@media only screen and (max-width: 976px) {
+@media (max-width: 976px) {
   .about-img .app {
     max-width: 250px;
   }
