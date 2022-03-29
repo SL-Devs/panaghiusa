@@ -55,6 +55,11 @@ body {
   -moz-filter: opacity(0.5);
 }
 
+/* Modals */
+.modal-content p{
+  text-align: justify;
+}
+
 /* Guides */
 .top-header-plastics {
   min-height: 370px;
