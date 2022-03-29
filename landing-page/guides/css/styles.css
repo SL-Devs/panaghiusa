@@ -68,7 +68,7 @@ body {
 .top-header-composing {
   min-height: 370px;
   background: linear-gradient(var(--overlay), var(--overlay)),
-    url(../img/bd-guides/1.jpg);
+    url(../img/bd-guides/composting/c0.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
