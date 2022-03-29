@@ -59,7 +59,7 @@ body {
 .top-header-plastics {
   min-height: 370px;
   background: linear-gradient(var(--overlay), var(--overlay)),
-    url(../img/bd-guides/plastics/p1.jpg);
+    url(../img/bd-guides/plastics/p0.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
