@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -126,6 +127,18 @@ body {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .carousel-item {
     height: 10rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 
 }
