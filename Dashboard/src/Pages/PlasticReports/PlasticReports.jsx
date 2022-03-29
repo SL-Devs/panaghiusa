@@ -3,6 +3,7 @@ import "./PlasticReports.css";
 import { useUserAuth } from "../../UserAuthContext";
 import { Link } from "react-router-dom";
 import { ref, remove } from "firebase/database";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import {
   DataGrid,
   GridToolbarContainer,
@@ -19,7 +20,15 @@ function CustomToolbar() {
   return (
     <GridToolbarContainer>
       <GridToolbarDensitySelector />
-      <GridToolbarExport />
+      <GridToolbarExport
+        csvOptions={{
+          fileName: "PlasticReports",
+        }}
+        printOptions={{
+          hideFooter: true,
+          hideToolbar: true,
+        }}
+      />
     </GridToolbarContainer>
   );
 }
@@ -65,6 +74,10 @@ export default function RealtimeReports() {
 
   const nextPage = () => {
     navigate("/wastemanagement");
+  };
+
+  const onHandleTobeConfirm = () => {
+    navigate("/plasticConfirm");
   };
 
   const columns = [
@@ -119,7 +132,12 @@ export default function RealtimeReports() {
   return (
     <div className="userList">
       <div className="reportTitle">Plastic Contribution Reports</div>
-
+      <div className="DelieveryContainer">
+        <button className="DelieveryButton" onClick={onHandleTobeConfirm}>
+          <LocalShippingIcon />
+          Delivery
+        </button>
+      </div>
       <DataGrid
         title="Employee Data"
         className="dataGrid"

@@ -9,7 +9,6 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { db, auth } from "./Firebase";
-import { confirm } from "react-confirm-box";
 
 import { set, ref, onValue, remove, update } from "firebase/database";
 
@@ -18,6 +17,7 @@ export function UserAuthContextProvider({ children }) {
   const [user, setUser] = useState({});
   const [data, setData] = useState([]);
   const [RealtimeData, setRealtimeData] = useState([]);
+
   const [OrganicContribution, setOrganicContribution] = useState([]);
 
   //Read the Data
@@ -45,8 +45,6 @@ export function UserAuthContextProvider({ children }) {
     });
   }, []);
 
-  console.log(RealtimeData);
-
   useEffect(() => {
     onValue(ref(db, "OrganicContribution/"), (snapshot) => {
       setOrganicContribution([]);
@@ -58,13 +56,6 @@ export function UserAuthContextProvider({ children }) {
       }
     });
   }, []);
-
-  const options = {
-    labels: {
-      confirmable: "Confirm",
-      cancellable: "Cancel",
-    },
-  };
 
   function logIn(email, password) {
     return signInWithEmailAndPassword(auth, email, password);
@@ -100,7 +91,6 @@ export function UserAuthContextProvider({ children }) {
         logOut,
         googleSignIn,
         data,
-
         setData,
         RealtimeData,
         setRealtimeData,

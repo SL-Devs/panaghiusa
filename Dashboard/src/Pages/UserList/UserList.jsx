@@ -9,7 +9,7 @@ import { db } from "../../Firebase";
 import { confirm } from "react-confirm-box";
 
 export default function UserList() {
-  const { data, handleDelete, setData } = useUserAuth();
+  const { data, setData } = useUserAuth();
   const [selectedRows, setSelectedRows] = useState([]);
 
   const options = {
@@ -17,6 +17,15 @@ export default function UserList() {
       confirmable: "Confirm",
       cancellable: "Cancel",
     },
+  };
+
+  const RealtimeDelete = async (id) => {
+    const result = await confirm("Are you sure you to get rid of this data ?");
+    if (result) {
+      setData(data.filter((item) => item.id !== id));
+      remove(ref(db, `Users/${id}`));
+      console.log(id);
+    }
   };
 
   const handleDeleteSelectedRows = async () => {
@@ -55,7 +64,7 @@ export default function UserList() {
     },
     { field: "email", headerName: "Email", width: 200 },
     { field: "number", headerName: "Number", width: 200 },
-    { field: "password", headerName: "Password", width: 200 },
+    { field: "city", headerName: "City", width: 200 },
     { field: "points", headerName: "Points", width: 100 },
     {
       field: "action",
@@ -70,7 +79,7 @@ export default function UserList() {
             {
               <DeleteIcon
                 className="userListDelete"
-                onClick={() => handleDelete(params.row.id)}
+                onClick={() => RealtimeDelete(params.row.id)}
               />
             }
           </>

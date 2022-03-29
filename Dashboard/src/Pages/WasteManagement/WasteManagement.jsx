@@ -3,6 +3,8 @@ import "./WasteManagement.css";
 import { useUserAuth } from "../../UserAuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import { ref, remove } from "firebase/database";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+
 import {
   DataGrid,
   GridToolbarContainer,
@@ -47,7 +49,7 @@ export default function WasteManagement() {
         OrganicContribution.filter((row) => !selectedRows.includes(row.id))
       );
       selectedRows.map((item) => {
-        return remove(ref(db, `Users/${item}`));
+        return remove(ref(db, `OrganicContribution/${item}`));
       });
     }
   };
@@ -56,6 +58,9 @@ export default function WasteManagement() {
     navigate("/realtime");
   };
 
+  const onHandleTobeConfirm = () => {
+    navigate("/organicconfirm");
+  };
   const columns = [
     { field: `contributionID`, headerName: "Contribution ID", width: 200 },
     {
@@ -100,7 +105,12 @@ export default function WasteManagement() {
   return (
     <div className="userList">
       <div className="reportTitle">Organic Waste Contribution Reports </div>
-
+      <div className="DelieveryContainer">
+        <button className="DelieveryButton" onClick={onHandleTobeConfirm}>
+          <LocalShippingIcon />
+          Delivery
+        </button>
+      </div>
       <DataGrid
         getRowId={(row) => row.contributionID}
         className="dataGrid"

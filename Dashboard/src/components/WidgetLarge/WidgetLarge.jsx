@@ -11,10 +11,8 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField";
 import SearchIcon from "@mui/icons-material/Search";
-import { GridToolbar } from "@mui/x-data-grid";
 export default function WidgetLarge() {
   const { data } = useUserAuth();
-  console.table(data);
   const [searchTerm, setSearchTerm] = useState(" ");
 
   return (
@@ -39,7 +37,7 @@ export default function WidgetLarge() {
           <TableHead>
             <TableRow>
               <TableCell align="left"></TableCell>
-              <TableCell align="left">ID</TableCell>
+
               <TableCell align="left"> Fullname </TableCell>
               <TableCell align="left"> Date </TableCell>
               <TableCell align="left">Email</TableCell>
@@ -79,13 +77,13 @@ export default function WidgetLarge() {
               .map((row) => {
                 return (
                   <TableRow
-                    key={row.name}
+                    key={row.id}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
                     <TableCell component="th" scope="row">
                       {row.name}
                     </TableCell>
-                    <TableCell align="left">{row.id}</TableCell>
+
                     <TableCell align="left">{row.fullname}</TableCell>
                     <TableCell align="left">{row.date}</TableCell>
                     <TableCell align="left">{row.email}</TableCell>

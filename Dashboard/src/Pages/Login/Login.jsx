@@ -69,7 +69,7 @@ export default function Login({ authenticate }) {
     }
     if (!values.password) {
       errors.password = "Password is required";
-    } else if (values.password.length < 8) {
+    } else if (values.password.length <= 8) {
       errors.password = "Password must be more than 4 characters";
     } else if (values.password.length > 8) {
       errors.password = "Password cannot exceed more than 8 characters";

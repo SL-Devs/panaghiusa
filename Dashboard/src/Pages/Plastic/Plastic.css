@@ -1,35 +1,21 @@
-
-.userTitleContainerPlastic{
-    display: flex;
-    justify-content: space-between;
+.userTitleContainerPlastic {
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.userUpdate{
-    padding: 100px;
-
+.userUpdate {
+  padding: 100px;
 }
 
-.userUpdateInput{
-    outline: 0;
+.userUpdateInput {
+  outline: 0;
 }
-.userTitle{
-    color: #4C9865;
-    font-size: 30px;
+.userTitle {
+  color: #4c9865;
+  font-size: 30px;
 }
-
 
 .MuiSvgIcon-fontSizeInherit {
-    font-size: inherit;
-    color: white;
-}
-
-.alert{
-    position: relative;
-    top: -75px;
-}
-
-.formContainer{
-    position: relative;
-    top: -50px;
+  font-size: inherit;
+  color: white;
 }
