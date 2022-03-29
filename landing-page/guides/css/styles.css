@@ -120,3 +120,11 @@ body {
     height: 20rem;
   }
 }
+
+@media (max-width: 320px) {
+  .carousel-item {
+    height: 10rem;
+  }
+}
+
+
