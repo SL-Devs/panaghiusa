@@ -28,7 +28,7 @@ body {
 } */
 
 .carousel {
-  margin-bottom: 4rem; 
+  margin-bottom: 4rem;
 }
 
 .carousel-caption {
@@ -41,7 +41,7 @@ body {
   background-color: black;
 }
 
-.carousel-item > img {
+.carousel-item>img {
   position: absolute;
   top: 0;
   left: 0;
@@ -105,7 +105,7 @@ body {
   .carousel-item {
     height: 30rem;
   }
-  
+
 }
 
 @media (max-width: 767.98px) {
@@ -115,16 +115,17 @@ body {
 }
 
 @media (max-width: 575.98px) {
+
   /* Home img */
   .carousel-item {
     height: 20rem;
   }
 }
 
-@media (max-width: 320px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .carousel-item {
     height: 10rem;
   }
+
 }
-
-
