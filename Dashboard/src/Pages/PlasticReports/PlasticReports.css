@@ -80,3 +80,27 @@ li.MuiMenuItem-root.MuiMenuItem-gutters.MuiButtonBase-root.css-kk1bwy-MuiButtonB
   color: black;
   font-weight: 400;
 }
+
+.DelieveryContainer {
+  float: right;
+  margin-right: 10px;
+}
+
+.DelieveryButton {
+  border: none;
+  color: white;
+  background-color: #4c9865;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.DelieveryButton:hover {
+  color: #4c9865;
+  background-color: white;
+}
