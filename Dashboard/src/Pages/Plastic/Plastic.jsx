@@ -14,6 +14,7 @@ import NumbersIcon from "@mui/icons-material/Numbers";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { db } from "../../Firebase";
+import Snackbar from "@mui/material/Snackbar";
 import { set, ref, onValue, remove, update } from "firebase/database";
 
 export default function User() {
@@ -24,7 +25,20 @@ export default function User() {
   const [address, setAddress] = useState("");
   const [number, setNumber] = useState("");
   const [longandlat, setLongandlat] = useState("");
-  const [edit, setEdit] = useState(false);
+  const [state, setState] = React.useState({
+    open: false,
+    vertical: "top",
+    horizontal: "center",
+  });
+  const { vertical, horizontal, open } = state;
+
+  const handleClick = (newState) => () => {
+    setState({ open: true, ...newState });
+  };
+
+  const handleClose = () => {
+    setState({ ...state, open: false });
+  };
 
   useEffect(() => {
     onValue(ref(db, `PlasticContribution/${realtimeId}`), (snapshot) => {
@@ -48,11 +62,30 @@ export default function User() {
       number,
       longandlat,
     });
-    setEdit(true);
   };
 
   return (
     <div className="user">
+      <Snackbar
+        anchorOrigin={{ vertical, horizontal }}
+        open={open}
+        onClose={handleClose}
+        key={vertical + horizontal}
+        autoHideDuration={3000}
+      >
+        <Alert
+          sx={{
+            width: "200px",
+            fontSize: "13px",
+            justifyContent: "center",
+            color: "white",
+            backgroundColor: "#4C9865",
+          }}
+          severity="success"
+        >
+          Updated Successfully!
+        </Alert>
+      </Snackbar>
       <div className="userTitleContainerPlastic">
         <h1 className="userTitle">EDIT USER</h1>
         <Link to="/realtime">
@@ -116,22 +149,7 @@ export default function User() {
           </div>
         </div>
         <div className="userUpdate">
-          <div className="alert">
-            {edit && (
-              <Alert
-                severity="success"
-                sx={{
-                  width: "250px",
-                  fontSize: "18px",
-                  justifyContent: "center",
-                  color: "white",
-                  backgroundColor: "#4C9865",
-                }}
-              >
-                Updated Successfully!
-              </Alert>
-            )}
-          </div>
+          <div className="alert"></div>
           <div className="formContainer">
             <span className="userUpdateTitle">Edit</span>
             <form onSubmit={handleSubmitChange} className="userUpdateForm">
@@ -190,7 +208,15 @@ export default function User() {
                 </div>
               </div>
               <div className="userUpdateRight">
-                <button className="userUpdateButton">Update</button>
+                <button
+                  onClick={handleClick({
+                    vertical: "top",
+                    horizontal: "center",
+                  })}
+                  className="userUpdateButton"
+                >
+                  Update
+                </button>
               </div>
             </form>
           </div>
