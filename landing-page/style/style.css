@@ -35,11 +35,11 @@ span.strong {
 }
 
 /* content links */
-#about-us a {
+#about-us a, .card-text a{
   text-decoration: none;
 }
 
-#about-us a:hover {
+#about-us a:hover, .card-text a:hover {
   text-decoration: underline;
 }
 
