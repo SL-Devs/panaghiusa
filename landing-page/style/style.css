@@ -60,8 +60,12 @@ span.strong {
 }
 
 /* Justify paragrahps */
-#home-section p, #about-us p, #download p{
+#home-section p, #about-us p, #download p, #meet-the-team .card-text{
   text-align: justify;
+}
+
+#meet-the-team .card-text {
+  font-size: 0.90rem;
 }
 
 
@@ -158,6 +162,13 @@ span.strong {
   top: 100px;
   left: 95px;
   transform: rotate(-25deg) translateY(-15%);
+}
+
+.about-img .dashboard {
+  max-width: 500px;
+  position: absolute;
+  top: 150px;
+  left: -50px;
 }
 
 /* The team */
@@ -319,6 +330,13 @@ footer .footer-links {
     left: 5rem;
     max-width: 10.375rem;
   }
+
+  
+  .about-img .dashboard {
+    left: -1rem;
+    max-width: 20.375rem;
+  }
+
 
   .about-img .about-shape {
     width: 17.5rem;
