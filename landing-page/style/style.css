@@ -25,10 +25,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+span.strong {
+  font-weight: bold;
+}
+
 /* navbar */
 .navbar li a:hover {
   color: var(--color-green) !important;
 }
+
+/* content links */
+#about-us a {
+  text-decoration: none;
+}
+
+#about-us a:hover {
+  text-decoration: underline;
+}
+
 
 .card-cover {
   background-repeat: no-repeat;
@@ -44,6 +58,12 @@ body {
   box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
     inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
+
+/* Justify paragrahps */
+#home-section p, #about-us p, #download p{
+  text-align: justify;
+}
+
 
 /* Increase padding top & bottom */
 #features,
