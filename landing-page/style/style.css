@@ -35,11 +35,14 @@ span.strong {
 }
 
 /* content links */
-#about-us a, .card-text a{
+#about-us a,
+.card-text a {
   text-decoration: none;
 }
 
-#about-us a:hover, .card-text a:hover {
+#about-us a:hover,
+.card-text a:hover {
+  color: var(--color-green);
   text-decoration: underline;
 }
 
@@ -60,14 +63,12 @@ span.strong {
 }
 
 /* Justify paragrahps */
-#home-section p, #about-us p, #download p, #meet-the-team .card-text{
+#home-section p,
+#about-us p,
+#download p,
+#meet-the-team .card-text {
   text-align: justify;
 }
-
-#meet-the-team .card-text {
-  font-size: 0.90rem;
-}
-
 
 /* Increase padding top & bottom */
 #features,
@@ -281,6 +282,7 @@ footer .footer-links {
 }
 
 @media (max-width: 767.98px) {
+
   #home-section h1,
   #about-us h1,
   #feature h1,
@@ -331,7 +333,7 @@ footer .footer-links {
     max-width: 10.375rem;
   }
 
-  
+
   .about-img .dashboard {
     left: -1rem;
     max-width: 20.375rem;
@@ -371,6 +373,69 @@ footer .footer-links {
 
   .btn-group a {
     font-size: 1.5rem;
+  }
+
+  #home-section button {
+    font-size: 1rem;
+  }
+
+  #home-section figure img {
+    width: 320px;
+  }
+
+  #about-us button {
+    font-size: 1rem;
+  }
+
+  #download button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* About img */
+  .about-img .app {
+    left: 3rem;
+    max-width: 10rem;
+  }
+
+
+  .about-img .dashboard {
+    left: -2.5rem;
+    max-width: 18rem;
+  }
+
+
+  .about-img .about-shape {
+    right: 1rem;
+    width: 16rem;
+    height: 16rem;
+  }
+
+  /* Download img */
+
+  .download-image .download-shape-1 {
+    height: 14rem;
+    width: 14rem;
+  }
+
+  .download-image .app-image {
+    max-width: 15rem;
+    padding: 1rem 0 3rem 3rem;
+  }
+
+ 
+  #home-section p,
+  #about-us p,
+  #meet-the-team p,
+  #meet-the-team p.card-text,
+  #features p,
+  #download p {
+    font-size: 0.9rem;
+  }
+
+  .btn-group a {
+    font-size: 1rem;
   }
 
   #home-section button {
