@@ -1,16 +1,22 @@
 # Panaghiusa App 
 
-text...
+> You may clone this repository and only run the App and  the Dashboard on your local machine. You may also disregard the Landing-page. Listed below are the features and instructions on how to run the App and the Dashboard. 
 
-## Features
-- Retrieve Data from the App
-- Confirmation of Delivery 
-- Import image from database 
-- Details sa users 
+Login | Impact | Rewards
+--- | --- | --- 
+![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/impact.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/impact.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/rewards.png)
+
+<br />
+
+## Features 
+- User Signup and Login
+- Plastic Contribution that uses Teachable Machine powered by Tensorflow Lite
+- Organic Waste Contribution
+- User impact based on their contribution
 
 ## App Installation
 
-We highly encourage you to install the latest Android Studio to run the App. You can install the latest version of Android Studio, command-line tools, and SDK from the [Android Studio Website](https://developer.android.com/studio). 
+We highly encourage to install the latest Android Studio to run the App. You can install the latest version of Android Studio, command-line tools, and SDK from the [Android Studio Website](https://developer.android.com/studio). 
 
 # Panaghiusa Dashboard
 
