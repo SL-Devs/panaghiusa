@@ -231,6 +231,10 @@ footer .footer-links {
   text-decoration: none;
 }
 
+footer .footer-links:hover {
+  color: var(--color-green);
+}
+
 /* Material icons styling */
 
 /* Rules for sizing the icon. */
