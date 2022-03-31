@@ -35,12 +35,12 @@ span.strong {
 }
 
 /* content links */
-#about-us a,
+#about a,
 .card-text a {
   text-decoration: none;
 }
 
-#about-us a:hover,
+#about a:hover,
 .card-text a:hover {
   color: var(--color-green);
   text-decoration: underline;
@@ -64,16 +64,17 @@ span.strong {
 
 /* Justify paragrahps */
 #home-section p,
-#about-us p,
+#about p,
 #download p,
-#meet-the-team .card-text {
+#meet-the-team .card-text,
+#dashboard p {
   text-align: justify;
 }
 
 /* Increase padding top & bottom */
 #features,
 #guides,
-#about-us,
+#about,
 #meet-the-team,
 #download,
 #contact {
@@ -288,14 +289,14 @@ footer .footer-links:hover {
 @media (max-width: 767.98px) {
 
   #home-section h1,
-  #about-us h1,
+  #about h1,
   #feature h1,
   #download h1 {
     font-size: 1.8rem;
   }
 
   #home-section p,
-  #about-us p,
+  #about p,
   #meet-the-team p,
   #download p {
     font-size: 1.2rem;
@@ -305,7 +306,7 @@ footer .footer-links:hover {
     font-size: 1rem;
   }
 
-  #about-us button {
+  #about button {
     font-size: 1rem;
   }
 
@@ -362,14 +363,16 @@ footer .footer-links:hover {
   }
 
   #home-section h1,
-  #about-us h1,
+  #about h1,
   #feature h1,
-  #download h1 {
+  #download h1,
+  #meet-the-team h1,
+  #dashboard h1{
     font-size: 1.5rem;
   }
 
   #home-section p,
-  #about-us p,
+  #about p,
   #meet-the-team p,
   #download p {
     font-size: 1rem;
@@ -387,7 +390,7 @@ footer .footer-links:hover {
     width: 320px;
   }
 
-  #about-us button {
+  #about button {
     font-size: 1rem;
   }
 
@@ -430,7 +433,7 @@ footer .footer-links:hover {
 
  
   #home-section p,
-  #about-us p,
+  #about p,
   #meet-the-team p,
   #meet-the-team p.card-text,
   #features p,
