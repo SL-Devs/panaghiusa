@@ -55,9 +55,6 @@ Panaghiusa dashboard is built with React and this dashboard is only intended for
     ```
     npm install react-scripts --save
     ```
-
-<br />
-
 ## Landing Page 
 The landing page provides an overview of the app, its goals, the selection of United Nations Sustainable Development Goals (SDG), descriptions of its primary features, and information about the app's development team.
 
