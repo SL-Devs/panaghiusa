@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContributionSteps_Plastic.P_S3">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnBackS3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/sourcesans3_regular"
+                android:includeFontPadding="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Plastic Contribution"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:sv_doneCircleColor="@color/green"
+        app:sv_doneCircleRadius="12dp"
+        app:sv_doneStepLineColor="@color/green"
+        app:sv_doneStepMarkColor="@color/black"
+        app:sv_nextStepLineColor="@color/black"
+        app:sv_nextTextColor="@color/black"
+        app:sv_selectedCircleColor="@color/green"
+        app:sv_selectedCircleRadius="12dp"
+        app:sv_selectedStepNumberColor="@color/white"
+        app:sv_selectedTextColor="@color/black"
+        app:sv_stepLineWidth="2dp"
+        app:sv_stepNumberTextSize="15dp"
+        app:sv_stepPadding="5dp"
+        app:sv_stepViewStyle="@style/StepView"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/tvLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit contribution?"
+                android:textSize="20dp"
+                android:fontFamily="@font/sourcesans3_bold"
+                android:textColor="@color/green"
+                android:layout_gravity="center"/>
+
+
+            <ProgressBar
+                android:id="@+id/pbLoadingContribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/light"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/light"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can track the courier here."
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/light"
+                android:textColor="@color/green"
+                android:visibility="invisible"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/btnTrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/light"
+                android:text="My Contribution"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

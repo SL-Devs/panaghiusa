@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".PickUp_Update_Plastic">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plastic Waste Pick-Up Update"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sourcesans3_semibold"
+        android:layout_marginTop="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#2E7D32"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contribution ID: "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/sourcesans3_regular"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/tvContributionID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/sourcesans3_regular"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User ID: "
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/sourcesans3_regular"/>
+        <TextView
+            android:id="@+id/tvUserID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/sourcesans3_regular"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sourcesans3_regular"
+            android:text="Name: "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/sourcesans3_regular"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/sourcesans3_regular"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/sourcesans3_regular"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No: "
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/sourcesans3_regular"/>
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/sourcesans3_regular"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/sourcesans3_regular"
+            android:text="Plastic Contributed: "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tvPlasticContribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/sourcesans3_regular"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" kilo"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/sourcesans3_regular"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#2E7D32"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/green"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contributions: "
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:fontFamily="@font/sourcesans3_bold"
+                />
+
+            <TextView
+                android:id="@+id/tvItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plastic Bottle \nLeaves"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/sourcesans3_regular"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Points Calculator"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:fontFamily="@font/sourcesans3_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of Plastic Waste: "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/sourcesans3_bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Spinner
+                android:id="@+id/sType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sourcesans3_regular" />
+
+            <TextView
+                android:id="@+id/tvFormula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note: Plastic Bottle = 1 pt/Kilo"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:fontFamily="@font/sourcesans3_regular"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount of Kilo: "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/sourcesans3_bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <EditText
+                    android:id="@+id/etKilo"
+                    android:inputType="numberDecimal"
+                    android:layout_width="100dp"
+                    android:hint="0 kilo"
+                    android:textColorHint="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sourcesans3_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount of Points: "
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sourcesans3_bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.2 pts"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sourcesans3_bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:textColor="@color/green"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/sourcesans3_semibold"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear"
+                    android:textColor="@color/green"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/sourcesans3_semibold"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/sourcesans3_semibold"
+                android:text="Upload Updated Data"
+                android:textColor="@color/green" />
+
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    
+</LinearLayout>

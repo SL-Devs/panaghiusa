@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sldevs.panaghiusa" >
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Panaghiusa" >
+        <activity
+            android:name=".ProfilePane.My_Impact"
+            android:exported="false" />
+        <activity
+            android:name=".Point_SystemPane.Redeemable"
+            android:exported="false" />
+        <activity
+            android:name=".Point_SystemPane.Nearest_Branch"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePane.Plastic_Contribution"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePane.Organic_Contribution"
+            android:exported="false" />
+        <activity
+            android:name=".ContributionSteps_Plastic.C"
+            android:exported="false" />
+        <activity
+            android:name=".ContributionSteps_Organic.O_S3"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePane.MyContribution"
+            android:exported="false" />
+        <activity
+            android:name=".ContributionSteps_Organic.O_S2"
+            android:exported="false" />
+        <activity
+            android:name=".ContributionSteps_Organic.O_S1"
+            android:exported="false" />
+        <activity
+            android:name=".ContributionSteps_Plastic.P_S3"
+            android:exported="false" />
+        <activity
+            android:name=".ContributionSteps_Plastic.P_S2"
+            android:exported="false" />
+        <activity
+            android:name=".ContributionSteps_Plastic.P_S1"
+            android:exported="false" />
+        <activity
+            android:name=".ContributionSteps_Pane"
+            android:exported="false" />
+        <activity
+            android:name=".Report_Track"
+            android:exported="false" />
+        <activity
+            android:name=".Scanned_Result"
+            android:exported="false" />
+        <activity
+            android:name=".QRScanner"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_App"
+            android:exported="false" />
+        <activity
+            android:name=".Craft_It"
+            android:exported="false" />
+        <activity
+            android:name=".Plastic_Report"
+            android:exported="false" />
+        <activity
+            android:name=".Point_System"
+            android:exported="false" />
+        <activity
+            android:name=".Home_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Getting_Started"
+            android:exported="false" />
+        <activity
+            android:name=".Email_Verification"
+            android:exported="false" />
+        <activity
+            android:name=".Sign_Up"
+            android:exported="false" />
+        <activity
+            android:name=".Log_In"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

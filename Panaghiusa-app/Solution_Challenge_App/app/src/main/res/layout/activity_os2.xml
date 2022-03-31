@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContributionSteps_Organic.O_S2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnBackS2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/sourcesans3_regular"
+                android:includeFontPadding="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Organic Contribution"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:sv_doneCircleColor="@color/green"
+        app:sv_doneCircleRadius="12dp"
+        app:sv_doneStepLineColor="@color/green"
+        app:sv_doneStepMarkColor="@color/black"
+        app:sv_nextStepLineColor="@color/black"
+        app:sv_nextTextColor="@color/black"
+        app:sv_selectedCircleColor="@color/green"
+        app:sv_selectedCircleRadius="12dp"
+        app:sv_selectedStepNumberColor="@color/white"
+        app:sv_selectedTextColor="@color/black"
+        app:sv_stepLineWidth="2dp"
+        app:sv_stepNumberTextSize="15dp"
+        app:sv_stepPadding="5dp"
+        app:sv_stepViewStyle="@style/StepView"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvContributions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fruits, Vegetables, Leaves and Paper"
+                android:textSize="18sp"
+                android:fontFamily="@font/sourcesans3_bold"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/green"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contributions"
+                android:textSize="15sp"
+                android:fontFamily="@font/sourcesans3_semibold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Cart"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/sourcesans3_semibold"
+                android:textColor="@color/green"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day/days being held"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sourcesans3_regular"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tvReportID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="321323123"
+                android:textSize="20sp"
+                android:fontFamily="@font/sourcesans3_bold"
+                android:textColor="@color/green"
+                android:layout_gravity="left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourcesans3_semibold"
+                android:text="Contribution ID"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:id="@+id/tvFullnameReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jason S. Llanes"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sourcesans3_bold"
+                android:textColor="@color/green"
+                android:layout_gravity="left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fullname"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="left"
+                android:fontFamily="@font/sourcesans3_semibold"/>
+
+            <TextView
+                android:id="@+id/tvMobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09166873915"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sourcesans3_bold"
+                android:textColor="@color/green"
+                android:layout_gravity="left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No."
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="left"
+                android:fontFamily="@font/sourcesans3_semibold"
+                />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upper 20 - 21st Nazareth"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sourcesans3_bold"
+                android:textColor="@color/green"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/sourcesans3_semibold"
+                />
+
+            <TextView
+                android:id="@+id/tvLatandLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sourcesans3_bold"
+                android:text="123.45,123.45"
+                android:textColor="@color/green"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exact Loaction"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="left"
+                android:fontFamily="@font/sourcesans3_semibold"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/btnGetLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Click here to get exact location)"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="left"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnPreviousS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/light"
+                    android:text="Back "
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btnNextS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/light"
+                    android:text="Next "
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

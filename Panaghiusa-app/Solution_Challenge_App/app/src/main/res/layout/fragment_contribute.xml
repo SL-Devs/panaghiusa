@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".BottomNavFragments.Contribute">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What do you want to contribute?"
+        android:textSize="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sourcesans3_regular"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPlastic"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:background="@drawable/plastic" />
+
+            <ImageView
+                android:id="@+id/ivFood"
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:background="@drawable/organic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+<!--    <com.shuhart.stepview.StepView-->
+<!--        android:id="@+id/stepView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="16dp"-->
+<!--        app:stepsNumber="2"-->
+<!--        app:sv_selectedCircleColor="@color/green"-->
+<!--        app:sv_selectedTextColor="@color/green"-->
+<!--        app:sv_stepLineWidth="1dp"-->
+<!--        app:sv_stepPadding="4dp"-->
+<!--        app:sv_nextTextColor="@color/black"-->
+<!--        app:sv_nextStepLineColor="@color/black"-->
+<!--        app:sv_doneCircleColor="@color/green"-->
+<!--        app:sv_doneStepLineColor="@color/green"-->
+<!--        app:sv_doneCircleRadius="12dp"-->
+<!--        app:sv_selectedCircleRadius="12dp"-->
+<!--        app:sv_selectedStepNumberColor="@color/green"-->
+<!--        app:sv_stepViewStyle="@style/StepView"-->
+<!--        app:sv_doneStepMarkColor="@color/green"-->
+<!--        app:sv_stepNumberTextSize="12sp"-->
+<!--        app:sv_animationType="Line" />-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:padding="20dp">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+<!--            <include-->
+<!--                android:id="@+id/Contribution_Step1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="@color/green"-->
+<!--                android:padding="20dp"/>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </ScrollView>-->
+</LinearLayout>
