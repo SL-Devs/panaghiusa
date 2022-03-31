@@ -8,7 +8,7 @@
 
 Login | Impact | Rewards
 --- | --- | --- 
-![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/impact.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/impact.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/rewards.png)
+![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/login.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/impact.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/rewards.png)
 
 ## Features 
 - User Signup and Login
