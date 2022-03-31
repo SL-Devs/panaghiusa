@@ -44,11 +44,17 @@ Panaghiusa dashboard is built with React and this dashboard is only intended for
 ## Dashboard Installation and Configuration
  - Install node.js if you don't have it already
  - When you clone the repo, navigate to the you will need to install the dependencies by running:
-    ### `npm install`
+    ```
+    npm install
+    ```
   - In the project directory, you can run: 
-    ### `npm start`
+    ```
+    npm start
+    ```
   - If face some issues like "react-scripts" is not recognized as internal or external command" error. Install the react-scripts by running: 
-    ### `npm install react-scripts --save`
+    ```
+    npm install react-scripts --save
+    ```
 
 <br />
 
