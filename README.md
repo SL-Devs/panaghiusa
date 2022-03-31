@@ -51,7 +51,7 @@ Panaghiusa dashboard is built with React and this dashboard is only intended for
     ```
     npm install
     ```
-  - In the project directory, you can run: 
+  - In the dashboard directory, you can run: 
     ```
     npm start
     ```
