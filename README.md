@@ -19,13 +19,17 @@ Login | Impact | Rewards
 ## Panaghiusa Courier App
 We have also included the courier app as one of the scalability soon. We plan to collaborate with courier carriers who will assist us in scanning user's plastic contributions, and contributions data will retrieve in the app. 
 
-The APK file for this app is available [here]().
+The APK file for this app is available [here](https://drive.google.com/file/d/11GowqiVtVS1I0lf32OFkT5ehMqlR2nDe/view?usp=sharing).
 
 ## App Installation
 
 We highly encourage you to install the latest Android Studio to run the App, version of Bumblebee, or later. You can install the latest version of Android Studio, command-line tools, and SDK from the [Android Studio Website](https://developer.android.com/studio). 
 
-The APK file of the app can be downloaded [here](). 
+### Running the app in Android Studio
+
+After cloning the repository, launch Android Studio and navigate to the ```Panaghiusa-app``` folder. To run one of the applications, select between these two folders ```Solution_Challenge_App```, the Panaghiusa app, and the ```Panaghiusa_CourierApp```, the courier's app.
+
+The APK file of the app can be downloaded [here](https://drive.google.com/file/d/1K1Rr32NnYCVmwMZXGoz4b7iieusuScxX/view?usp=sharing). 
 
 <br />
 
@@ -43,7 +47,7 @@ Panaghiusa dashboard is built with React and this dashboard is only intended for
 
 ## Dashboard Installation and Configuration
  - Install node.js if you don't have it already
- - When you clone the repo, navigate to the you will need to install the dependencies by running:
+ - When you clone the repository, navigate to the root folder of the dashboard, and you will need to install the dependencies by running: 
     ```
     npm install
     ```
@@ -54,6 +58,14 @@ Panaghiusa dashboard is built with React and this dashboard is only intended for
   - If face some issues like "react-scripts" is not recognized as internal or external command" error. Install the react-scripts by running: 
     ```
     npm install react-scripts --save
+    ```
+    - Another way to fix this error is to reinstall packages. By running: 
+     ```
+    npm audit fix
+    ```
+      or 
+    ```
+    npm update
     ```
 ## Landing Page 
 The landing page provides an overview of the app, its goals, the selection of United Nations Sustainable Development Goals (SDG), descriptions of its primary features, and information about the app's development team.
