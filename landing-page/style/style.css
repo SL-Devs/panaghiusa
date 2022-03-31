@@ -434,23 +434,4 @@ footer .footer-links {
     font-size: 0.9rem;
   }
 
-  .btn-group a {
-    font-size: 1rem;
-  }
-
-  #home-section button {
-    font-size: 1rem;
-  }
-
-  #home-section figure img {
-    width: 320px;
-  }
-
-  #about-us button {
-    font-size: 1rem;
-  }
-
-  #download button {
-    font-size: 1rem;
-  }
 }
