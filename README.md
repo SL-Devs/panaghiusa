@@ -1,6 +1,6 @@
 > You may clone this repository and only run the App and  the Dashboard on your local machine. You may also disregard the Landing-page. 
 > 
-> Listed below are the features and instructions on how to run the App and the Web dashboard.
+> Listed below are the main features and instructions on how to run the App and the Web dashboard.
 
 <br />
 
