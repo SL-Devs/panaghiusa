@@ -2,8 +2,6 @@
 > 
 > Listed below are the main features and instructions on how to run the App and the Web dashboard.
 
-<br />
-
 # Panaghiusa App  
 
 Login | Impact | Rewards
@@ -18,9 +16,6 @@ Login | Impact | Rewards
 
 ## Panaghiusa Courier App
 We have also included the courier app as one of the scalability soon. We plan to collaborate with courier carriers who will assist us in scanning user's plastic contributions, and contributions data will retrieve in the app. 
-
-The APK file for this app is available [here](https://drive.google.com/file/d/11GowqiVtVS1I0lf32OFkT5ehMqlR2nDe/view?usp=sharing).
-
 ## App Installation
 
 We highly encourage you to install the latest Android Studio to run the App, version of Bumblebee, or later. You can install the latest version of Android Studio, command-line tools, and SDK from the [Android Studio Website](https://developer.android.com/studio). 
@@ -29,7 +24,12 @@ We highly encourage you to install the latest Android Studio to run the App, ver
 
 After cloning the repository, launch Android Studio and navigate to the ```Panaghiusa-app``` folder. To run one of the applications, select between these two folders ```Solution_Challenge_App```, the Panaghiusa app, and the ```Panaghiusa_CourierApp```, the courier's app.
 
-The APK file of the app can be downloaded [here](https://drive.google.com/file/d/1K1Rr32NnYCVmwMZXGoz4b7iieusuScxX/view?usp=sharing). 
+### APK Files are also available
+
+APK file for the Panaghiusa app is available [here](https://drive.google.com/file/d/1K1Rr32NnYCVmwMZXGoz4b7iieusuScxX/view?usp=sharing). 
+
+APK file for the Courier app is available [here](https://drive.google.com/file/d/11GowqiVtVS1I0lf32OFkT5ehMqlR2nDe/view?usp=sharing).
+
 
 <br />
 
