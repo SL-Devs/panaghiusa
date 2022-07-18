@@ -1,9 +1,12 @@
 :root {
   --bd-light-green: #b7e4c7;
   --color-green: #4c9865;
+  --ease: all 0.3s ease 0s;
+  --overlay: rgba(23, 25, 29, 0.8);
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -14,14 +17,36 @@ body::before {
   height: 90px;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+}
+
+span.strong {
+  font-weight: bold;
 }
 
 /* navbar */
 .navbar li a:hover {
   color: var(--color-green) !important;
 }
+
+/* content links */
+#about a,
+.card-text a {
+  text-decoration: none;
+}
+
+#about a:hover,
+.card-text a:hover {
+  color: var(--color-green);
+  text-decoration: underline;
+}
+
 
 .card-cover {
   background-repeat: no-repeat;
@@ -38,13 +63,68 @@ body {
     inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
+/* Justify paragrahps */
+#home-section p,
+#about p,
+#download p,
+#meet-the-team .card-text,
+#dashboard p {
+  text-align: justify;
+}
+
 /* Increase padding top & bottom */
 #features,
-#about-us,
+#guides,
+#about,
 #meet-the-team,
 #download,
 #contact {
   padding: 6.25rem 0 !important;
+}
+
+/* Guides */
+.top-header-plastics {
+  min-height: 370px;
+  background: linear-gradient(var(--overlay), var(--overlay)),
+    url(../img/bd-guides/plastics/p1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-header-composing {
+  min-height: 370px;
+  background: linear-gradient(var(--overlay), var(--overlay)),
+    url(../img/bd-guides/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video {
+  height: 180px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.video i:hover {
+  opacity: 1;
+  background-color: #4c9865;
 }
 
 /* About section */
@@ -85,6 +165,13 @@ body {
   top: 100px;
   left: 95px;
   transform: rotate(-25deg) translateY(-15%);
+}
+
+.about-img .dashboard {
+  max-width: 500px;
+  position: absolute;
+  top: 150px;
+  left: -50px;
 }
 
 /* The team */
@@ -146,6 +233,10 @@ footer .footer-links {
   text-decoration: none;
 }
 
+footer .footer-links:hover {
+  color: var(--color-green);
+}
+
 /* Material icons styling */
 
 /* Rules for sizing the icon. */
@@ -185,7 +276,7 @@ footer .footer-links {
 
 /* Media queries */
 
-@media only screen and (max-width: 976px) {
+@media (max-width: 976px) {
   .about-img .app {
     max-width: 250px;
   }
@@ -197,15 +288,16 @@ footer .footer-links {
 }
 
 @media (max-width: 767.98px) {
+
   #home-section h1,
-  #about-us h1,
+  #about h1,
   #feature h1,
   #download h1 {
     font-size: 1.8rem;
   }
 
   #home-section p,
-  #about-us p,
+  #about p,
   #meet-the-team p,
   #download p {
     font-size: 1.2rem;
@@ -215,7 +307,7 @@ footer .footer-links {
     font-size: 1rem;
   }
 
-  #about-us button {
+  #about button {
     font-size: 1rem;
   }
 
@@ -247,6 +339,13 @@ footer .footer-links {
     max-width: 10.375rem;
   }
 
+
+  .about-img .dashboard {
+    left: -1rem;
+    max-width: 20.375rem;
+  }
+
+
   .about-img .about-shape {
     width: 17.5rem;
     height: 17.5rem;
@@ -265,14 +364,16 @@ footer .footer-links {
   }
 
   #home-section h1,
-  #about-us h1,
+  #about h1,
   #feature h1,
-  #download h1 {
+  #download h1,
+  #meet-the-team h1,
+  #dashboard h1{
     font-size: 1.5rem;
   }
 
   #home-section p,
-  #about-us p,
+  #about p,
   #meet-the-team p,
   #download p {
     font-size: 1rem;
@@ -290,11 +391,55 @@ footer .footer-links {
     width: 320px;
   }
 
-  #about-us button {
+  #about button {
     font-size: 1rem;
   }
 
   #download button {
     font-size: 1rem;
   }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* About img */
+  .about-img .app {
+    left: 3rem;
+    max-width: 10rem;
+  }
+
+
+  .about-img .dashboard {
+    left: -2.5rem;
+    max-width: 18rem;
+  }
+
+
+  .about-img .about-shape {
+    right: 1rem;
+    width: 16rem;
+    height: 16rem;
+  }
+
+  /* Download img */
+
+  .download-image .download-shape-1 {
+    height: 14rem;
+    width: 14rem;
+  }
+
+  .download-image .app-image {
+    max-width: 15rem;
+    padding: 1rem 0 3rem 3rem;
+  }
+
+ 
+  #home-section p,
+  #about p,
+  #meet-the-team p,
+  #meet-the-team p.card-text,
+  #features p,
+  #download p {
+    font-size: 0.9rem;
+  }
+
 }

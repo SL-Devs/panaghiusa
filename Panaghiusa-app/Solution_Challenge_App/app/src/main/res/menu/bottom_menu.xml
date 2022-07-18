@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/guide"
+        android:title="Guides"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/craft" />
+    <item
+        android:id="@+id/holder"
+        android:title=" "
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/points"
+        android:title="Points"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/points"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/avatar"/>
+
+</menu>
