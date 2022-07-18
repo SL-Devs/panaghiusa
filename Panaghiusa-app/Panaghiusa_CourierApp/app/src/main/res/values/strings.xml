@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Panaghiusa_CourierApp</string>
+    <string-array name="plasticTypes">
+        <item></item>
+        <item>Plastic Bottle</item>
+        <item>CD</item>
+        <item>Perfume Bottle</item>
+    </string-array>
+
+    <string-array name="organicTypes">
+        <item></item>
+        <item>Fruits</item>
+        <item>Vegetable</item>
+        <item>Leaves</item>
+        <item>Paper/Cardboard</item>
+    </string-array>
+</resources>

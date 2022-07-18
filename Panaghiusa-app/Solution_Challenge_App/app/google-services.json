@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "178419737414",
+    "firebase_url": "https://panaghiusa-28480-default-rtdb.firebaseio.com",
+    "project_id": "panaghiusa-28480",
+    "storage_bucket": "panaghiusa-28480.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178419737414:android:6750f4d090ddddc1b8bb47",
+        "android_client_info": {
+          "package_name": "com.sldevs.panaghiusa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178419737414-4dc3a09ntd66lnogqt6d3iqdv86bff7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6Q-lZdpxxQ7ghV9MJvNCblg3pw4Y0-wM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178419737414-4dc3a09ntd66lnogqt6d3iqdv86bff7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

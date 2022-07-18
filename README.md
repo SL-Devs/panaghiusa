@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+> You may clone this repository and only run the App and  the Dashboard on your local machine. You may also disregard the Landing-page. 
+> 
+> Listed below are the main features and instructions on how to run the App and the Web dashboard.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Panaghiusa App  
 
-## Available Scripts
+Login | Impact | Rewards
+--- | --- | --- 
+![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/login.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/impact.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/app-img/rewards.png)
 
-In the project directory, you can run:
+## Features 
+- User Signup and Login
+- Plastic Contribution that uses Teachable Machine powered by Tensorflow Lite
+- Organic Waste Contribution
+- User impact based on their contribution
 
-### `npm start`
+## Panaghiusa Courier App
+We have also included the courier app as one of the scalability soon. We plan to collaborate with courier carriers who will assist us in scanning user's plastic contributions, and contributions data will retrieve in the app. 
+## App Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+We highly encourage you to install the latest Android Studio to run the App, version of Bumblebee, or later. You can install the latest version of Android Studio, command-line tools, and SDK from the [Android Studio Website](https://developer.android.com/studio). 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Running the app in Android Studio
 
-### `npm test`
+After cloning the repository, launch Android Studio and navigate to the ```Panaghiusa-app``` folder. To run one of the applications, select between these two folders ```Solution_Challenge_App```, the Panaghiusa app, and the ```Panaghiusa_CourierApp```, the courier's app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### APK Files are also available
 
-### `npm run build`
+APK file for the Panaghiusa app is available [here](https://drive.google.com/file/d/1K1Rr32NnYCVmwMZXGoz4b7iieusuScxX/view?usp=sharing). 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+APK file for the Courier app is available [here](https://drive.google.com/file/d/11GowqiVtVS1I0lf32OFkT5ehMqlR2nDe/view?usp=sharing).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br />
 
-### `npm run eject`
+# Panaghiusa Web dashboard
+Dashboard | Delivery Confirmation | User details
+--- | --- | --- 
+![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/dashboard-img/dashboard.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/dashboard-img/delivery.png) | ![](https://raw.githubusercontent.com/GinoongFlores/panaghiusa/main/landing-page/img/dashboard-img/user.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Panaghiusa dashboard is built with React and this dashboard is only intended for admins who track the progress of a user that interacts with the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features 
+- Retrieve user data
+- Contribution confirmation
+- User details
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dashboard Installation and Configuration
+ - Install node.js if you don't have it already
+ - When you clone the repository, navigate to the root folder of the dashboard, and you will need to install the dependencies by running: 
+    ```
+    npm install
+    ```
+  - In the dashboard directory, you can run: 
+    ```
+    npm start
+    ```
+  - If face some issues like "react-scripts" is not recognized as internal or external command" error. Install the react-scripts by running: 
+    ```
+    npm install react-scripts --save
+    ```
+    - Another way to fix this error is to reinstall packages. By running: 
+     ```
+    npm audit fix
+    ```
+      or 
+    ```
+    npm update
+    ```
+## Landing Page 
+The landing page provides an overview of the app, its goals, the selection of United Nations Sustainable Development Goals (SDG), descriptions of its primary features, and information about the app's development team.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To know more about the Panaghiusa app, visit its website [here](https://panaghiusa.netlify.app/). 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

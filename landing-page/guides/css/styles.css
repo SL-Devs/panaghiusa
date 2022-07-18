@@ -70,7 +70,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.top-header-composing {
+.top-header-composting {
   min-height: 370px;
   background: linear-gradient(var(--overlay), var(--overlay)),
     url(../img/bd-guides/composting/c0.jpg);
@@ -118,6 +118,23 @@ body {
   .carousel-item {
     height: 25rem;
   }
+
+  #guides h2, .top-header-plastics h2, .top-header-composting h2 {
+    font-size: 1.5rem;
+  }
+
+  #guides h3 {
+    font-size: 1.3rem;
+  }
+
+  #guides p, .top-header-plastics p, .top-header-composting p {
+    font-size: 1rem;
+  }
+
+  .top-header-plastics button, .top-header-composting button {
+    font-size: 1rem;
+  }
+
 }
 
 @media (max-width: 575.98px) {
@@ -125,6 +142,36 @@ body {
   /* Home img */
   .carousel-item {
     height: 20rem;
+  }
+
+  #guides button {
+    font-size: 0.8rem;
+  }
+
+  #guides h2, .top-header-plastics h2, .top-header-composting h2 {
+    font-size: 1.1rem;
+  }
+
+  #guides h3 {
+    font-size: 1rem;
+  }
+
+  #guides p, .top-header-plastics p, .top-header-composting p {
+    font-size: 0.8rem;
+  }
+
+  .top-header-plastics button, .top-header-composting button {
+    font-size: 0.8rem;
+  }
+
+  .modal-title {
+    font-size: 1rem;
+  }
+
+  /* Modal video guides */
+
+  .video-guides h4 {
+    font-size: 1rem;
   }
 }
 
@@ -134,16 +181,6 @@ body {
     height: 10rem;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
+ 
 
 }

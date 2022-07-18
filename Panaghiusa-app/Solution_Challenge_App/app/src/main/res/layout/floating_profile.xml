@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_centerInParent="true"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="551dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRAdius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/sourcesans3_semibold"
+                    android:gravity="center"
+                    android:text="Full Name"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <TextView
+
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/sourcesans3_semibold"
+                    android:gravity="center"
+                    android:text="Email Address"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/sourcesans3_semibold"
+                    android:gravity="center"
+                    android:text="Mobile No."
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#fff" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <Button
+                            android:id="@+id/btnProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="35dp"
+                            android:background="@drawable/white_rounded_corner"
+                            android:fontFamily="@font/sourcesans3_bold"
+                            android:text="My Profile"
+                            android:textColor="@color/green"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btnShowQR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="35dp"
+                            android:background="@drawable/white_rounded_corner"
+                            android:fontFamily="@font/sourcesans3_bold"
+                            android:text="My QR Code"
+                            android:textColor="@color/green"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btnStats"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="35dp"
+                            android:background="@drawable/white_rounded_corner"
+                            android:fontFamily="@font/sourcesans3_bold"
+                            android:text="MY STATS"
+                            android:textColor="@color/green"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btnTrack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="35dp"
+                            android:background="@drawable/white_rounded_corner"
+                            android:fontFamily="@font/sourcesans3_bold"
+                            android:text="REPORT TRACK"
+                            android:textColor="@color/green"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btnLogout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="35dp"
+                            android:background="@drawable/white_rounded_corner"
+                            android:fontFamily="@font/sourcesans3_bold"
+                            android:text="Log out"
+                            android:textColor="@color/green"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:elevation="50dp"
+        android:padding="5dp"
+        android:src="@drawable/avatar"
+        app:shapeAppearanceOverlay="@style/Circular" />
+</RelativeLayout>
